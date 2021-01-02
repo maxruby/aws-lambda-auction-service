@@ -1,5 +1,5 @@
 {
-  "name": "auction-service",
+  "name": "aws-lambda-auction-service",
   "version": "1.0.0",
   "description": "Serverless Lambda Function Auction microservice",
   "author": "Maximiliano Suster <mxsstr93@gmail.com>",
