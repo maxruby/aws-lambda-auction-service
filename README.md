@@ -1,32 +1,34 @@
-# Codingly.io: Base Serverless Framework Template
+# Serverless Lambda Auction Service
 
-https://codingly.io
+## Description
+A simple Auction service consisting of multiple serverless lambda functions, based on the [Serverless framework Bootcamp](https://www.udemy.com/course/serverless-framework/).
 
-## What's included
-* Folder structure used consistently across our projects.
-* [serverless-pseudo-parameters plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Allows you to take advantage of CloudFormation Pseudo Parameters.
-* [serverless-bundle plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Bundler based on the serverless-webpack plugin - requires zero configuration and fully compatible with ES6/ES7 features.
+## Dependencies
+* [serverless-pseudo-parameters plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Support for CloudFormation Pseudo Parameters.
+* [serverless-bundle plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Webpack plugin providing zero configuration for bundling JavaScript including modern ES6/ES7 features.
 
-## Getting started
+## Setup
+Created using [codingly.io](https://github.com/codingly-io/sls-base) as follows:
+
+```shell
+$ sls create --name auction-service --template-url https://github.com/codingly-io/sls-base
+$ cd auction-service
+$ npm install
 ```
-sls create --name YOUR_PROJECT_NAME --template-url https://github.com/codingly-io/sls-base
-cd YOUR_PROJECT_NAME
-npm install
+
+## Development
+```shell
+$ npm start
 ```
 
-You are ready to go!
+## Deployment
+```shell
+$ sls deploy -v
+```
 
 ## Authentication
+- User authentication is based on [Auth0](https://auth0.com/docs).
 
-Auth0:
-
-email: mxsstr93@gmail.com
-password: X4^S5qdh^{SJcaH
-
-## Uuid generation
-
-- https://www.uuidgenerator.net/version4
-
-## Base64 encoding
-
-- https://codingly-io.github.io/base64-encoder/
+## Encoding
+- [Uuid generation](https://www.uuidgenerator.net/version4) 
+- [Base64 encoding](https://codingly-io.github.io/base64-encoder)
