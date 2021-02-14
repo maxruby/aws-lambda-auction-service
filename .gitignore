@@ -5,6 +5,10 @@ jspm_packages
 # Serverless directories
 .serverless
 
+# AWS directories
+aws
+*.zip
+ 
 # Webpack directories
 .webpack
 
