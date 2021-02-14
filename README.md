@@ -7,13 +7,41 @@ A simple Auction service consisting of multiple serverless lambda functions, bas
 * [serverless-pseudo-parameters plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Support for CloudFormation Pseudo Parameters.
 * [serverless-bundle plugin](https://www.npmjs.com/package/serverless-pseudo-parameters): Webpack plugin providing zero configuration for bundling JavaScript including modern ES6/ES7 features.
 
-## Setup
+## Desktop Development Setup
 Created using [codingly.io](https://github.com/codingly-io/sls-base) as follows:
 
 ```shell
 $ sls create --name auction-service --template-url https://github.com/codingly-io/sls-base
 $ cd auction-service
 $ npm install
+```
+
+## Cloud Development Setup on GitPod
+
+Start Gitpod session
+- Go to https://gitpod.io/#https://github.com/maxruby/aws-lambda-auction-service
+- Install VS Code extensions: `AWS Toolkit`
+- Install Serverless framework and AWS dependencies
+
+```shell
+$ npm install
+
+# Install serverless framework and configure credentials
+$ npm install -g serverless
+$ serverless config credentials --provider aws --key [AWS Key] --secret [AWS Secret]
+
+# Install aws-cli
+$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+$ unzip awscliv2.zip
+$ ./aws/install -i ~/.local/aws-cli -b ~/.local/bin
+$ alias aws=/home/gitpod/.local/bin/aws
+
+# check installation and configure
+$ aws
+$ aws --version
+$ aws configure
+  # set aws_access_key_id [laptop]
+  # Aws_secret_access_key [laptop]
 ```
 
 ## Development
