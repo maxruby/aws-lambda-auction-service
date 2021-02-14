@@ -20,7 +20,11 @@ $ npm install
 
 Start Gitpod session
 - Go to https://gitpod.io/#https://github.com/maxruby/aws-lambda-auction-service
-- Install VS Code extensions: `AWS Toolkit`
+- Install VS Code extensions: 
+    - `AWS Toolkit`
+    - `Git Graph`
+    - `Git History`
+
 - Install Serverless framework and AWS dependencies
 
 ```shell
