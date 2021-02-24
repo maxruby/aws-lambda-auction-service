@@ -1,8 +1,11 @@
 service: auction-service
 
+useDotenv: true
+
 plugins:
   - serverless-bundle
   - serverless-pseudo-parameters
+  - serverless-dotenv-plugin
 
 provider:
   name: aws
